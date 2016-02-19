@@ -72,7 +72,7 @@ Default website is http://localhost:8080/philips/ which is home entry page
 
 9. demo.mp4 is provided as demo
 The following link is demo video in the dropbox, please feel free to check it 
-https://www.dropbox.com/sh/ngjssc4am8zk0pu/AADMO_QmXdSQJRow8E4aLxV9a?dl=0
+https://goo.gl/2Nr4Ns
 
 
 
