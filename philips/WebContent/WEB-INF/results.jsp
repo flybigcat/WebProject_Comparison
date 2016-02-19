@@ -79,7 +79,7 @@
 	<!-- Show results -->		
 	<div class="bottom-form">
 		<div class="container">
-		<div class="col-md-6 pd news" > 
+		<div class="col-md-12 pd news" > 
 		<c:choose>
 		<c:when test="${not empty fileMap1 && fn:length(fileMap1) gt 0}">
 			<c:set var="count1" value="0" scope="page" />
@@ -107,7 +107,7 @@
 		</c:choose>
 		</div>
 		
-		<div class="col-md-6 pd news" >
+		<div class="col-md-12 pd news" >
 		<c:choose>
 		<c:when test="${not empty fileMap2 && fn:length(fileMap2) gt 0}">
 			<c:set var="count2" value="0" scope="page" />
@@ -115,7 +115,7 @@
 				<c:if test="${entry2.value.unique}">
 					<c:set var="count2" value="${count2 + 1}" scope="page" />	
 				<c:if test="${count2==1}">
-				<h3>The unique records in the first file ${fileName2} are:</h3>
+				<h3>The unique records in the second file ${fileName2} are:</h3>
 				</c:if>
 				<p>${entry2.value.id} &nbsp ${entry2.value.name} &nbsp
 					<c:forEach items="${entry2.value.values}" var="v">

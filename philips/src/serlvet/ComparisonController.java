@@ -115,8 +115,6 @@ public class ComparisonController extends HttpServlet {
 			List<FileItem> fields = upload.parseRequest(request);
 			Iterator<FileItem> it = fields.iterator();
 
-			System.out.println(fields.size());
-
 			if (!it.hasNext() || fields.size() != 2) {
 				out.println("Please upload two exiting files");
 				return;
@@ -192,30 +190,6 @@ public class ComparisonController extends HttpServlet {
 
 			}
 		}
-
-		// get unique
-		for (Map.Entry<Integer, RecordEntry> entry : fileMap1.entrySet()) {
-			if (entry.getValue().unique) {
-				System.out.println(entry.getValue().name);
-				System.out.println(entry.getKey());
-				for (Integer i : entry.getValue().values) {
-					System.out.print(i + " ");
-				}
-				System.out.println();
-			}
-		}
-
-		for (Map.Entry<Integer, RecordEntry> entry : fileMap2.entrySet()) {
-			if (entry.getValue().unique) {
-				System.out.println(entry.getValue().name);
-				System.out.println(entry.getKey());
-				for (Integer i : entry.getValue().values) {
-					System.out.print(i + " ");
-				}
-				System.out.println();
-			}
-		}
-
 	}
 
 	/**
